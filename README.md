@@ -3,14 +3,16 @@ Client based on Model Context Protocol.
 
 # To create a new client
 ## Create new project
-dotnet new console -n QuickstartClient
+```dotnet new console -n QuickstartClient```
 
 ## Import dependencies
-dotnet add package ModelContextProtocol --prerelease
+`dotnet add package ModelContextProtocol --prerelease`
 
-dotnet add package Anthropic.SDK
+`dotnet add package Anthropic.SDK`
 
-dotnet add package Microsoft.Extensions.Hosting
+`dotnet add package Microsoft.Extensions.Hosting`
+
+`dotnet add package Microsoft.Exensions.AI`
 
 ## Setting up API Key
 
@@ -23,4 +25,4 @@ dotnet user-secrets set "ANTHROPIC_API_KEY" "<your key here>"
 .\Program.cs 
 
 ## Compile and run
-dotnet run -- path/to/server.csproj # dotnet server
+`dotnet run -- path/to/server.csproj # dotnet server`
